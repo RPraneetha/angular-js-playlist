@@ -5,6 +5,9 @@
     <link href="content/css/styles.css" rel="stylesheet" type="text/css" />
     <script src = "app\lib\angular.min.js"></script>
   </head>
-    <input text = "text" ng-model="favBook" placeholder="Enter your fav Book"  />
+  <body ng-init="ninjas=['eyu','light','ryu','shaun']">
+    <ul>
+      <li ng-repeat="ninja in ninjas">{{ninja}}</li>
+    </ul>
   </body>
 </html>

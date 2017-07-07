@@ -13,8 +13,10 @@ Single Page Apps
 
 To Learn:
   - MVC Overview
-  - 2-way data-binding
-  - Filters, directives and expressions
+  - 2-way data-binding - If you update the model, the view will get updated and if you update the view, the model will get updated
+  - Filters
+  - Directives - Starts with "ng", tells AngularJS we want it to do something. Can be  customized. Used as attributes or HTML elements or any thing you want
+  - Expressions - Evaluates expressions (mathematical, string functions, etc.) (like JS)
   - Controllers and how to use them
   - Views and Routing
   - Animations
