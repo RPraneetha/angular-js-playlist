@@ -10,7 +10,27 @@ myNinjaApp.run(function(){
 
 myNinjaApp.controller('NinjaController', ['$scope', function($scope){
   //fires while the application runs
-  $scope.message = "hey y'all";
-  $scope.ninjas = ['yoshi', 'light', 'ryu', 'shaun'];
+  $scope.ninjas = [
+    {
+      name: 'Yoshi',
+      belt: 'green',
+      rate: 50
+    },
+    {
+      name: 'Light',
+      belt: 'yellow',
+      rate: 30
+    },
+    {
+      name: 'Ryu',
+      belt: 'Orange',
+      rate: 10
+    },
+    {
+      name: 'Shaun',
+      belt: 'Black',
+      rate: 1000
+    }
+  ];
 
 }]);
