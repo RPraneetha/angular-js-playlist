@@ -10,6 +10,10 @@ myNinjaApp.run(function(){
 
 myNinjaApp.controller('NinjaController', ['$scope', function($scope){
   //fires while the application runs
+  $scope.removeNinja = function(ninja){
+    var removedNinja = $scope.ninjas.indexOf(ninja);
+    $scope.ninjas.splice(removedNinja, 1);
+  }
   $scope.ninjas = [
     {
       name: 'Yoshi',
