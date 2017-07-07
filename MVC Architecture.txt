@@ -1,0 +1,21 @@
+Programming methodology that splits an application into 3 main components: Model, View, Controller - Separation of concerns
+
+Model
+  - Model = data
+  - JSON, database data, etc
+
+View
+  - Used to display content & data to a user in a web browser
+  - Uses HTML
+  - Use expressions to insert data into views
+
+Controllers
+  - Control the functionality of our views
+  - Performs the interaction between our models and views
+  - Different controllers for different areas in our application
+
+Example:
+  - User clicks a 'show users' button in a view
+  - The 'UserController' recognises the button click even and performs a function
+  - The function communicates with the 'users' model and retrieves all user data
+  - The controller passes accessibility to this data to the view which then displays it to the end user via expressions

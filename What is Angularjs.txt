@@ -1,0 +1,28 @@
+MVC style JS framework for creating single page data-driven apps.
+
+Features:
+  - 2 way data binding
+  - templating
+  - DOM interaction
+  - filters
+  - directives
+  - many more...
+
+Single Page Apps
+  - additional content brought into the webpage without needing to refresh by using views and routing.
+
+To Learn:
+  - MVC Overview
+  - 2-way data-binding
+  - Filters, directives and expressions
+  - Controllers and how to use them
+  - Views and Routing
+  - Animations
+  - Form validation
+  - Create a to-do list application
+
+  Pre-requisites:
+    - Javascript
+    - HTML
+    - CSS (optional)
+    - JSON (optional)
