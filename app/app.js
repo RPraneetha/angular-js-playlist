@@ -4,7 +4,7 @@ myNinjaApp.config(['$routeProvider',function($routeProvider){
   //fires before the application runs
    $routeProvider
     .when('/home',{
-      templateUrl: 'views/home.html'
+      controller: 'NinjaController'
     })
     .when('/directory', {
       templateUrl: 'views/directory.html',
@@ -17,6 +17,19 @@ myNinjaApp.config(['$routeProvider',function($routeProvider){
 myNinjaApp.run(function(){
   //fires while the application runs
 });
+
+myNinjaApp.directive('randomNinja',[function(){
+  return{
+    restrict: 'E',
+    scope: {
+      ninjas: '=',
+      title: '='
+    },
+    controller: function($scope){
+      $scope.random = Math.floor(Math.random*4);
+    }
+  };
+}]);
 
 myNinjaApp.controller('NinjaController', ['$scope','$http', function($scope, $http){
   //fires while the application runs
