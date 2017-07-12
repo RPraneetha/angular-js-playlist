@@ -150,7 +150,7 @@ main.ng-enter-active {
 
 #ninja-list li.ng-leave.ng-leave-active {
   opacity:1;
-  transform: translateX(-100px);
+  transform: translateX(-100%);
 }
 
 #ninja-list li.ng-leave-stagger {
@@ -160,4 +160,9 @@ main.ng-enter-active {
 
 input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
   border: 2px solid red;
+}
+
+input[disabled="disabled"] {
+  opacity: 0.4;
+  cursor: not-allowed !important;
 }
