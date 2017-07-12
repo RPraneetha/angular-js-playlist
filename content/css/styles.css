@@ -93,13 +93,14 @@ main{
   font-size: 22px;
 }
 
-.content input{
+.content input, textarea{
   width: 90%;
   padding: 10px 5%;
   border-radius: 10px;
   border: 2px solid #ddd;
   margin: 10px 0;
 }
+
 
 .content input[type="submit"]:last-child{
   width: 150px;
@@ -155,4 +156,8 @@ main.ng-enter-active {
 #ninja-list li.ng-leave-stagger {
   transition-delay: 0.2s;
   transition-duration: 0;
+}
+
+input.ng-invalid.ng-touched, textarea.ng-invalid.ng-touched {
+  border: 2px solid red;
 }
